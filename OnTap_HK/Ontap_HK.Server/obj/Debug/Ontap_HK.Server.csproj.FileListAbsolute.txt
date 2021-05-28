@@ -1,0 +1,13 @@
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\OnTap_HK\Ontap_HK.Server\bin\Debug\Ontap_HK.Server.exe.config
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\OnTap_HK\Ontap_HK.Server\bin\Debug\Ontap_HK.Server.exe
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\OnTap_HK\Ontap_HK.Server\bin\Debug\Ontap_HK.Server.pdb
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\OnTap_HK\Ontap_HK.Server\bin\Debug\ClassLibrary1.dll
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\OnTap_HK\Ontap_HK.Server\bin\Debug\ClassLibrary1.pdb
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\OnTap_HK\Ontap_HK.Server\obj\Debug\Ontap_HK.Server.csprojAssemblyReference.cache
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\OnTap_HK\Ontap_HK.Server\obj\Debug\Ontap_HK.Server.Client.resources
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\OnTap_HK\Ontap_HK.Server\obj\Debug\Ontap_HK.Server.Properties.Resources.resources
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\OnTap_HK\Ontap_HK.Server\obj\Debug\Ontap_HK.Server.csproj.GenerateResource.cache
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\OnTap_HK\Ontap_HK.Server\obj\Debug\Ontap_HK.Server.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\OnTap_HK\Ontap_HK.Server\obj\Debug\Ontap_HK.Server.csproj.CopyComplete
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\OnTap_HK\Ontap_HK.Server\obj\Debug\Ontap_HK.Server.exe
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\OnTap_HK\Ontap_HK.Server\obj\Debug\Ontap_HK.Server.pdb
