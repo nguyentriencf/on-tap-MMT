@@ -98,10 +98,11 @@
             // lblDeThi
             // 
             this.lblDeThi.AutoSize = true;
-            this.lblDeThi.Location = new System.Drawing.Point(126, 117);
+            this.lblDeThi.Location = new System.Drawing.Point(157, 117);
             this.lblDeThi.Name = "lblDeThi";
             this.lblDeThi.Size = new System.Drawing.Size(0, 13);
             this.lblDeThi.TabIndex = 2;
+            this.lblDeThi.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblDeThi_LinkClicked_1);
             // 
             // lblMaSo
             // 
@@ -222,6 +223,7 @@
             this.cmdKetNoi.TabIndex = 8;
             this.cmdKetNoi.Text = "Kết Nối";
             this.cmdKetNoi.UseVisualStyleBackColor = true;
+            this.cmdKetNoi.Click += new System.EventHandler(this.cmdKetNoi_Click);
             // 
             // label13
             // 
@@ -265,7 +267,7 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông Tin Sinh Viên";
             // 
-            // Server
+            // Client
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -274,7 +276,7 @@
             this.Controls.Add(this.cmdNopBaiThi);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
-            this.Name = "Server";
+            this.Name = "Client";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

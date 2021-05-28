@@ -292,7 +292,7 @@
             this.cmdBatDauLamBai.TabIndex = 44;
             this.cmdBatDauLamBai.Text = "Bắt Đầu Làm Bài";
             this.cmdBatDauLamBai.UseVisualStyleBackColor = true;
-            this.cmdBatDauLamBai.Visible = false;
+            this.cmdBatDauLamBai.Click += new System.EventHandler(this.cmdBatDauLamBai_Click);
             // 
             // button6
             // 
@@ -386,7 +386,7 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Chức Năng";
             // 
-            // Client
+            // Server
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -397,8 +397,9 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
-            this.Name = "Client";
+            this.Name = "Server";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Server_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

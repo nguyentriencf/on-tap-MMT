@@ -198,5 +198,28 @@ namespace Client
             EventUpdateHandler.Invoke(this, args);
 
         }
+
+        public void sendDe(string namede)
+        {
+            foreach (Socket client in clientList)
+            {
+                serverReponse.Type = ServerResponseType.sendDe;
+                serverReponse.DataResponse = namede;
+                client.Send(Serialize(serverReponse));
+            }
+        }
+
+        private void cmdBatDauLamBai_Click(object sender, EventArgs e)
+        {
+           sendDe(cbChonMonThi.Text);
+            string pathSubjectExam = PathNameSubjectExam;
+           Send(pathSubjectExam);
+        }
+
+        private void Server_Load(object sender, EventArgs e)
+        {
+            Connect();
+        }
+
     }
 }
