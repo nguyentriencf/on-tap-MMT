@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ontap_socket_multi_client
+namespace On_tap_server
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace ontap_socket_multi_client
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Server());
+            Application.Run(new Form1());
         }
     }
 }

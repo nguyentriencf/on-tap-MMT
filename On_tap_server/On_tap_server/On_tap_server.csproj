@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{37A4B5D2-29C6-4DE4-A8C7-E63F18B8F817}</ProjectGuid>
+    <ProjectGuid>{24B2ADD7-9C66-4FB6-9A6F-12AE9ACE7B58}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ontap_socket_multi_client</RootNamespace>
-    <AssemblyName>ontap_socket_multi_client</AssemblyName>
+    <RootNamespace>On_tap_server</RootNamespace>
+    <AssemblyName>On_tap_server</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

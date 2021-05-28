@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ontap_socket_multi_client
+namespace On_tap_server
 {
-    public partial class Client : Form
+    public partial class Form1 : Form
     {
-        public Client()
+        public Form1()
         {
             InitializeComponent();
         }

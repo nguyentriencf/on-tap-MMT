@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ontap_socket_multi_client.Properties
+namespace On_tap_server.Properties
 {
 
 

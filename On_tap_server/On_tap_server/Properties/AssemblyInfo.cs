@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ontap_socket_multi_client")]
+[assembly: AssemblyTitle("On_tap_server")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ontap_socket_multi_client")]
+[assembly: AssemblyProduct("On_tap_server")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("37a4b5d2-29c6-4de4-a8c7-e63f18b8f817")]
+[assembly: Guid("24b2add7-9c66-4fb6-9a6f-12ae9ace7b58")]
 
 // Version information for an assembly consists of the following four values:
 //
