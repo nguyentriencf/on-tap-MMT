@@ -1,0 +1,13 @@
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\Multi-Client\client\client\bin\Debug\client.exe.config
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\Multi-Client\client\client\bin\Debug\client.exe
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\Multi-Client\client\client\bin\Debug\client.pdb
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\Multi-Client\client\client\bin\Debug\ServerReponse.dll
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\Multi-Client\client\client\bin\Debug\ServerReponse.pdb
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\Multi-Client\client\client\obj\Debug\client.csprojAssemblyReference.cache
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\Multi-Client\client\client\obj\Debug\client.Form1.resources
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\Multi-Client\client\client\obj\Debug\client.Properties.Resources.resources
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\Multi-Client\client\client\obj\Debug\client.csproj.GenerateResource.cache
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\Multi-Client\client\client\obj\Debug\client.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\Multi-Client\client\client\obj\Debug\client.csproj.CopyComplete
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\Multi-Client\client\client\obj\Debug\client.exe
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\Multi-Client\client\client\obj\Debug\client.pdb

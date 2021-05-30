@@ -59,7 +59,7 @@ namespace Ontap_HK.Server
                 {
 
                     byte[] data = new byte[1024 * 5000];
-
+                    // return number byte rêcived
                     client.Receive(data);
                     ServerReponse serverReponse = new ServerReponse();
                     serverReponse = (ServerReponse)Deserialize(data);

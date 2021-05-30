@@ -1,0 +1,6 @@
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\Multi-Client\client\ServerReponse\bin\Debug\ServerReponse.dll
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\Multi-Client\client\ServerReponse\bin\Debug\ServerReponse.pdb
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\Multi-Client\client\ServerReponse\obj\Debug\ManagermentCommunication.csprojAssemblyReference.cache
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\Multi-Client\client\ServerReponse\obj\Debug\ManagermentCommunication.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\Multi-Client\client\ServerReponse\obj\Debug\ServerReponse.dll
+C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\Multi-Client\client\ServerReponse\obj\Debug\ServerReponse.pdb

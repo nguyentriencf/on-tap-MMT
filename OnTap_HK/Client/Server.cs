@@ -39,7 +39,6 @@ namespace Client
                 {
                     PathNameSubjectExam = openFileDialog1.FileName;
                     string fileName = Path.GetFileName(PathNameSubjectExam);
-
                     lstDeThi.Items.Add(fileName);
                     //_server.Send(PathName);
                 }
@@ -53,7 +52,7 @@ namespace Client
         {
             clientList = new List<Socket>();
             IP = new IPEndPoint(IPAddress.Any, 9999);
-            server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
+            server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             server.Bind(IP);
 
             Thread Listen = new Thread(() =>
@@ -87,7 +86,6 @@ namespace Client
             {
                 while (true)
                 {
-
                     byte[] data = new byte[1024 * 5000];
                     client.Receive(data);
                     ServerReponse serverReponse = new ServerReponse();
@@ -97,16 +95,12 @@ namespace Client
                         case ServerResponseType.SendFile:
                             byte[] receiveBylength = (byte[])serverReponse.DataResponse;
                             SaveFile(receiveBylength, receiveBylength.Length);
-
                             break;
-                        case ServerResponseType.SendAcceptUser:
-                            string ipUser = client.RemoteEndPoint.ToString().Split(':')[0];
-                            var mssv = (string)serverReponse.DataResponse;
-                            Updates(mssv);
-
-                            break;
-
-
+                        //case ServerResponseType.SendAcceptUser:
+                        //    string ipUser = client.RemoteEndPoint.ToString().Split(':')[0];
+                        //    var mssv = (string)serverReponse.DataResponse;
+                        //    Updates(mssv);
+                        //    break;
                         default:
                             break;
                     }
