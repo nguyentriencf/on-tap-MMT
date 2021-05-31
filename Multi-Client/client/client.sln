@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{62C86D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagermentCommunication", "ServerReponse\ManagermentCommunication.csproj", "{743A031D-D9EF-4BCC-B1CA-76A6445C5406}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{F4809EF2-262C-4BBC-9B70-698CBFAFC86A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{743A031D-D9EF-4BCC-B1CA-76A6445C5406}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{743A031D-D9EF-4BCC-B1CA-76A6445C5406}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{743A031D-D9EF-4BCC-B1CA-76A6445C5406}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4809EF2-262C-4BBC-9B70-698CBFAFC86A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4809EF2-262C-4BBC-9B70-698CBFAFC86A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4809EF2-262C-4BBC-9B70-698CBFAFC86A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4809EF2-262C-4BBC-9B70-698CBFAFC86A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -13,15 +13,28 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ManagermentCommunication;
+
 namespace client
 {
     public partial class Form1 : Form
     {
+        ExchangeData exchangeData = new ExchangeData(); 
         IPEndPoint iPEnd;
         Socket client;
         public Form1()
         {
             InitializeComponent();
+        
+            try
+            {
+                Connect();
+               
+            }
+            catch
+            {
+                MessageBox.Show("Kết nối server thất bại");
+            }
+
         }
 
         public void Connect()
@@ -32,7 +45,7 @@ namespace client
             client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             try
             {
-                client.Connect(iPEnd);
+                client.Connect(iPEnd);    
             }
             catch
             {
@@ -50,12 +63,13 @@ namespace client
                 while (true)
                 {
                     byte[] data = new byte[1024 * 5000];
+                    client.Receive(data);
                     ServerReponse serverReponse = new ServerReponse();
-                    serverReponse = (ServerReponse)Deserialize(data);
+                    serverReponse = (ServerReponse)exchangeData.Deserialize(data);
                     switch (serverReponse.Type)
                     {             
                         case ServerReponType.sendStudentDetail:
-
+                           
                             break;
                         default:
                             break;
@@ -64,55 +78,59 @@ namespace client
             }
             catch 
             {
+                closes();
 
-                throw;
             }
         }
-        public byte[] Serialize(object data)
+        public void closes()
         {
-            MemoryStream stream = new MemoryStream();
-            BinaryFormatter binaryFormatter = new BinaryFormatter();
-            binaryFormatter.Serialize(stream, data);
-            return stream.ToArray();
+            client.Close();
         }
-        public object Deserialize(byte[] data)
-        {
-            MemoryStream stream = new MemoryStream();
-            BinaryFormatter formatter = new BinaryFormatter();
-            return formatter.Deserialize(stream);
-        }
+        //public byte[] Serialize(object data)
+        //{
+        //    MemoryStream stream = new MemoryStream();
+        //    BinaryFormatter binaryFormatter = new BinaryFormatter();
+        //    binaryFormatter.Serialize(stream, data);
+        //    return stream.ToArray();
+        //}
+        //public object Deserialize(byte[] data)
+        //{
+        //    MemoryStream stream = new MemoryStream();
+        //    BinaryFormatter formatter = new BinaryFormatter();
+        //    return formatter.Deserialize(stream);
+        //}
         public void Send(string data)
         {
             if (data != string.Empty)
             {
-                client.Send(Serialize(data));
+                client.Send(exchangeData.Serialize(data));
             }
         }
+      
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSendSV_Click(object sender, EventArgs e)
         {
-            try
+            if (txtMSSV.Text != string.Empty && txtHoVaTen.Text != string.Empty && txtCountry.Text != string.Empty )
             {
-                Connect();
+                ServerReponse serverReponse = new ServerReponse();
+                Student student = new Student();
+                student.MSSV = txtMSSV.Text;
+                student.FullName = txtHoVaTen.Text;
+                student.Country = txtCountry.Text;
+                serverReponse.Type = ServerReponType.sendInfoStudent;
+                serverReponse.DataReponse =  student;
+                client.Send(exchangeData.Serialize(serverReponse));
             }
-            catch
+            else
             {
-                MessageBox.Show("Kết nối server thất bại");
+                MessageBox.Show("Kiểm tra lại thông tin sinh viên");
             }
             
         }
 
-        private void btnSendSV_Click(object sender, EventArgs e)
+        private void btnSearchByMSSV_Click(object sender, EventArgs e)
         {
-            List<string> infoStuden = new List<string>();
-            infoStuden.Add(txtMSSV.Text);
-            infoStuden.Add(txtHoVaTen.Text);
-            infoStuden.Add(txtCountry.Text);
-            foreach (var item in infoStuden)
-            {
-                MessageBox.Show(item);
-            }
-           
+            Send(txtSearchByMSSV.Text);
         }
     }
 }

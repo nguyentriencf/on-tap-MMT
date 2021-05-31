@@ -9,6 +9,7 @@ namespace ManagermentCommunication
     public enum ServerReponType
     {
         SearchStudent,
+        sendInfoStudent,
         sendStudentDetail
     }
     [Serializable]

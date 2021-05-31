@@ -29,26 +29,24 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnSearchByMSSV = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnSendSV = new System.Windows.Forms.Button();
+            this.txtCountry = new System.Windows.Forms.TextBox();
+            this.txtHoVaTen = new System.Windows.Forms.TextBox();
+            this.txtMSSV = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtMSSV = new System.Windows.Forms.TextBox();
-            this.txtHoVaTen = new System.Windows.Forms.TextBox();
-            this.txtCountry = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtSearchByMSSV = new System.Windows.Forms.TextBox();
-            this.btnSearchByMSSV = new System.Windows.Forms.Button();
-            this.btnSendSV = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.btnSearchByMSSV);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.label2);
@@ -61,22 +59,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin sinh viên";
             // 
-            // label1
+            // btnSearchByMSSV
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 63);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nhập MSSV:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 115);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 13);
-            this.label2.TabIndex = 0;
+            this.btnSearchByMSSV.Location = new System.Drawing.Point(283, 58);
+            this.btnSearchByMSSV.Name = "btnSearchByMSSV";
+            this.btnSearchByMSSV.Size = new System.Drawing.Size(123, 23);
+            this.btnSearchByMSSV.TabIndex = 5;
+            this.btnSearchByMSSV.Text = "Tìm thông tin";
+            this.btnSearchByMSSV.UseVisualStyleBackColor = true;
+            this.btnSearchByMSSV.Click += new System.EventHandler(this.btnSearchByMSSV_Click);
             // 
             // groupBox2
             // 
@@ -93,6 +84,37 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin chi tiết";
+            // 
+            // btnSendSV
+            // 
+            this.btnSendSV.Location = new System.Drawing.Point(147, 145);
+            this.btnSendSV.Name = "btnSendSV";
+            this.btnSendSV.Size = new System.Drawing.Size(75, 23);
+            this.btnSendSV.TabIndex = 7;
+            this.btnSendSV.Text = "Gửi thông tin";
+            this.btnSendSV.UseVisualStyleBackColor = true;
+            this.btnSendSV.Click += new System.EventHandler(this.btnSendSV_Click);
+            // 
+            // txtCountry
+            // 
+            this.txtCountry.Location = new System.Drawing.Point(119, 101);
+            this.txtCountry.Name = "txtCountry";
+            this.txtCountry.Size = new System.Drawing.Size(195, 20);
+            this.txtCountry.TabIndex = 4;
+            // 
+            // txtHoVaTen
+            // 
+            this.txtHoVaTen.Location = new System.Drawing.Point(119, 70);
+            this.txtHoVaTen.Name = "txtHoVaTen";
+            this.txtHoVaTen.Size = new System.Drawing.Size(195, 20);
+            this.txtHoVaTen.TabIndex = 4;
+            // 
+            // txtMSSV
+            // 
+            this.txtMSSV.Location = new System.Drawing.Point(119, 40);
+            this.txtMSSV.Name = "txtMSSV";
+            this.txtMSSV.Size = new System.Drawing.Size(195, 20);
+            this.txtMSSV.TabIndex = 4;
             // 
             // label5
             // 
@@ -121,26 +143,13 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "MSSV:";
             // 
-            // txtMSSV
+            // label2
             // 
-            this.txtMSSV.Location = new System.Drawing.Point(119, 40);
-            this.txtMSSV.Name = "txtMSSV";
-            this.txtMSSV.Size = new System.Drawing.Size(195, 20);
-            this.txtMSSV.TabIndex = 4;
-            // 
-            // txtHoVaTen
-            // 
-            this.txtHoVaTen.Location = new System.Drawing.Point(119, 70);
-            this.txtHoVaTen.Name = "txtHoVaTen";
-            this.txtHoVaTen.Size = new System.Drawing.Size(195, 20);
-            this.txtHoVaTen.TabIndex = 4;
-            // 
-            // txtCountry
-            // 
-            this.txtCountry.Location = new System.Drawing.Point(119, 101);
-            this.txtCountry.Name = "txtCountry";
-            this.txtCountry.Size = new System.Drawing.Size(195, 20);
-            this.txtCountry.TabIndex = 4;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(20, 115);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 13);
+            this.label2.TabIndex = 0;
             // 
             // txtSearchByMSSV
             // 
@@ -149,34 +158,14 @@
             this.txtSearchByMSSV.Size = new System.Drawing.Size(157, 20);
             this.txtSearchByMSSV.TabIndex = 4;
             // 
-            // btnSearchByMSSV
+            // label1
             // 
-            this.btnSearchByMSSV.Location = new System.Drawing.Point(283, 58);
-            this.btnSearchByMSSV.Name = "btnSearchByMSSV";
-            this.btnSearchByMSSV.Size = new System.Drawing.Size(123, 23);
-            this.btnSearchByMSSV.TabIndex = 5;
-            this.btnSearchByMSSV.Text = "Tìm thông tin";
-            this.btnSearchByMSSV.UseVisualStyleBackColor = true;
-            // 
-            // btnSendSV
-            // 
-            this.btnSendSV.Location = new System.Drawing.Point(147, 145);
-            this.btnSendSV.Name = "btnSendSV";
-            this.btnSendSV.Size = new System.Drawing.Size(75, 23);
-            this.btnSendSV.TabIndex = 7;
-            this.btnSendSV.Text = "Gửi thông tin";
-            this.btnSendSV.UseVisualStyleBackColor = true;
-            this.btnSendSV.Click += new System.EventHandler(this.btnSendSV_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(153, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Kết nối Server";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(17, 63);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nhập MSSV:";
             // 
             // Form1
             // 
@@ -209,7 +198,6 @@
         private System.Windows.Forms.TextBox txtSearchByMSSV;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSendSV;
-        private System.Windows.Forms.Button button1;
     }
 }
 
