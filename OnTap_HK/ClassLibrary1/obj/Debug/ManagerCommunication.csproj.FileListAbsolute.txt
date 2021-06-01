@@ -1,6 +1,0 @@
-C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\OnTap_HK\ClassLibrary1\bin\Debug\ClassLibrary1.dll
-C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\OnTap_HK\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
-C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\OnTap_HK\ClassLibrary1\obj\Debug\ManagerCommunication.csprojAssemblyReference.cache
-C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\OnTap_HK\ClassLibrary1\obj\Debug\ManagerCommunication.csproj.CoreCompileInputs.cache
-C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\OnTap_HK\ClassLibrary1\obj\Debug\ClassLibrary1.dll
-C:\Users\ADMIN\OneDrive\Desktop\on-tap-MMT\on-tap-MMT\OnTap_HK\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
